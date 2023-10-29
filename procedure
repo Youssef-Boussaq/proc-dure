@@ -1,0 +1,14 @@
+def q(n):
+    b = True
+    for i in range(2, int(n**0.5) + 1):  # You only need to check up to the square root of n
+      
+        if n % i == 0:
+            b = False
+            break  # Once you find a factor, you can stop checking
+    if b:
+        print("The number is prime.")
+    else:
+        print("The number is not prime.")
+
+a = int(input("Input the number: "))
+q(a)  # The function prints the result, so you don't need to print it again
